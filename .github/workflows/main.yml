@@ -9,7 +9,7 @@ on:
       device:
         description: 'Thiết bị mô phỏng'
         required: false
-        default: 'Pixel C'
+        default: 'Nexus One'
       width:
         description: 'Chiều rộng màn hình'
         required: false
@@ -32,7 +32,7 @@ env:
   CONTAINER_NAME: android9
   NOVNC_PORT: 6080
   ADB_PORT: 5555
-  DEVICE_NAME: ${{ github.event.inputs.device || 'Pixel C' }}
+  DEVICE_NAME: ${{ github.event.inputs.device || 'Nexus One' }}
   SCREEN_WIDTH: ${{ github.event.inputs.width || '720' }}
   SCREEN_HEIGHT: ${{ github.event.inputs.height || '1280' }}
   RAM_MB: ${{ github.event.inputs.memory_mb || '4096' }}
